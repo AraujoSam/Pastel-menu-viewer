@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../navbar/styles.css">
+    <link rel="stylesheet" href="../main/styles.css">
+
+</head>
+
+<body>
+
+    <div id="navbar-container">
+        <script>
+            fetch('../navbar/navbar.html')
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById('navbar-container').innerHTML = html
+                })
+        </script>
+    </div>
+
+    <h1>Cardápio de Pastéis</h1>
+    <div class="categoria">
+        <label for="pasteis">Filtrar por tipos</label>
+        <select name="menu" id="menu">
+            <option value="pickOne">Nenhum</option>
+            <option value="Pastel_Salgado">Pastel salgado</option>
+            <option value="Pastel_Doce">Pastel doce</option>
+            <option value="Bebidas">Bebidas</option>
+        </select>
+
+        <form id="options" class="options">
+            <p>Suas opções aparecerão aqui🫡</p>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="../navbar/script.js"></script>
+    <script src="../main/script.js"></script>
+</body>
+
+</html>

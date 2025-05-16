@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="../navbar/styles.css">
+
+</head>
+
+<body>
+    <div id="navbar-container">
+        <script>
+            fetch('../navbar/navbar.html')
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById('navbar-container').innerHTML = html
+                })
+        </script>
+    </div>
+
+
+    <div id="cart-summary"></div>
+
+
+
+
+
+
+    <script src="../navbar/script.js"></script>
+    <script src="../cart/cart.js"></script>
+
+</body>
+
+</html>
